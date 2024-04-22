@@ -5,6 +5,10 @@
   "description": "Shiki transformers function to add a filename and a button to copy the code",
   "author": "Myphz <danielkeq@gmail.com>",
   "main": "./dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Myphz/shiki-filename-copy-transformers.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc"
