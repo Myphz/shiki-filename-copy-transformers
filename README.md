@@ -36,9 +36,9 @@ import adapter from "@sveltejs/adapter-node";
 
 You will be able to get the `title` string from the third parameter `meta`.
 
-## Button style
+## Style
 
-Add some basic styling to display the button:
+Add some basic styling to display the button and filename:
 
 ```css
 pre:has(code) {
@@ -47,10 +47,10 @@ pre:has(code) {
 
 pre button.copy {
   position: absolute;
-  right: 16px;
-  top: 16px;
-  height: 28px;
-  width: 28px;
+  right: 1rem;
+  top: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
   padding: 0;
   display: flex;
 
@@ -63,12 +63,14 @@ pre button.copy {
   }
 
   & .ready {
-    background-image: url(/icons/copy.svg);
+    background: red;
+    /* background-image: url(/icons/copy.svg); */
   }
 
   & .success {
     display: none;
-    background-image: url(/icons/copy-success.svg);
+    background: green;
+    /* background-image: url(/icons/copy-success.svg); */
   }
 
   &.copied {
@@ -80,6 +82,17 @@ pre button.copy {
       display: none;
     }
   }
+}
+
+pre:has(.filename) {
+  padding-top: 3rem;
+}
+
+pre .filename {
+  position: absolute;
+  top: 1.5rem;
+  left: 2rem;
+  translate: 0 -50%;
 }
 ```
 
