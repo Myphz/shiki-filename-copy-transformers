@@ -28,11 +28,13 @@ export async function highlight(code, lang, meta) {
 You can get the filename from the third parameters `meta`.
 Your markdown code block can look like this:
 
-\`\`\`js title="file.js"  
+````
+```js title="file.js"
 import path from "path";
 
-import adapter from "@sveltejs/adapter-node";  
-\`\`\`
+import adapter from "@sveltejs/adapter-node";
+```
+````
 
 You will be able to get the `title` string from the third parameter `meta`.
 
