@@ -1,6 +1,6 @@
 {
   "name": "shiki-filename-copy-transformers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "type": "module",
   "description": "Shiki transformers function to add a filename and a button to copy the code",
   "author": "Myphz <danielkeq@gmail.com>",
@@ -11,7 +11,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prepare": "npm run build"
   },
   "license": "MIT",
   "keywords": [
