@@ -1,0 +1,24 @@
+{
+  "name": "shiki-filename-copy-transformers",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Shiki transformers function to add a filename and a button to copy the code",
+  "author": "Myphz <danielkeq@gmail.com>",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "keywords": [
+    "shiki",
+    "@shikijs/transformers"
+  ],
+  "devDependencies": {
+    "shiki": "^1.3.0",
+    "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "hastscript": "^9.0.0"
+  }
+}
